@@ -1,13 +1,13 @@
 import 'iss_position_model.dart';
 
-class LocationModel {
+class IssModel {
   String? message;
   IssPosition? issPosition;
   int? timestamp;
 
-  LocationModel({this.message, this.issPosition, this.timestamp});
+  IssModel({this.message, this.issPosition, this.timestamp});
 
-  LocationModel.fromJson(Map<String, dynamic> json) {
+  IssModel.fromJson(Map<String, dynamic> json) {
     message = json['message'];
     issPosition = json['iss_position'] != null
         ? IssPosition.fromJson(json['iss_position'])
