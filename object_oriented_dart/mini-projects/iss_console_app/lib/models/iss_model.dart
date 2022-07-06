@@ -2,15 +2,15 @@ import 'iss_position_model.dart';
 
 class IssModel {
   String? message;
-  IssPosition? issPosition;
   int? timestamp;
+  IssPositionModel? issPosition;
 
   IssModel({this.message, this.issPosition, this.timestamp});
 
   IssModel.fromJson(Map<String, dynamic> json) {
     message = json['message'];
     issPosition = json['iss_position'] != null
-        ? IssPosition.fromJson(json['iss_position'])
+        ? IssPositionModel.fromJson(json['iss_position'])
         : null;
     timestamp = json['timestamp'];
   }

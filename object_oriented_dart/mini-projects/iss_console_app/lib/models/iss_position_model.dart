@@ -1,11 +1,11 @@
 
-class IssPosition {
+class IssPositionModel {
   String? longitude;
   String? latitude;
 
-  IssPosition({this.longitude, this.latitude});
+  IssPositionModel({this.longitude, this.latitude});
 
-  IssPosition.fromJson(Map<String, dynamic> json) {
+  IssPositionModel.fromJson(Map<String, dynamic> json) {
     longitude = json['longitude'];
     latitude = json['latitude'];
   }
